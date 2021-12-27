@@ -8,11 +8,10 @@ class splashscreen extends StatefulWidget {
 }
 
 class _splashscreenState extends State<splashscreen> {
-
   @override
-  void initState(){
+  void initState() {
     super.initState();
-    Timer(Duration(seconds: 3), (){
+    Timer(Duration(seconds: 3), () {
       Navigator.of(context).pushReplacement(MaterialPageRoute(
         builder: (context) => homepage(),
       ));
@@ -20,14 +19,14 @@ class _splashscreenState extends State<splashscreen> {
   }
 
   // added test yourself
-  // and made the text to align at center 
+  // and made the text to align at center
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.indigo,
       body: Center(
         child: Text(
-          "Quizstar\nTest Yourself !!",
+          "Qua-Qui\nQuiz Yourself !!",
           style: TextStyle(
             fontSize: 50.0,
             color: Colors.white,

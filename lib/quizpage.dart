@@ -16,13 +16,13 @@ class getjson extends StatelessWidget {
   // sets the asset to a particular JSON file
   // and opens the JSON
   setasset() {
-    if (langname == "Python") {
+    if (langname == "Computational Thinking") {
       assettoload = "assets/python.json";
-    } else if (langname == "Java") {
+    } else if (langname == "Math") {
       assettoload = "assets/java.json";
-    } else if (langname == "Javascript") {
+    } else if (langname == "Statistics") {
       assettoload = "assets/js.json";
-    } else if (langname == "C++") {
+    } else if (langname == "English") {
       assettoload = "assets/cpp.json";
     } else {
       assettoload = "assets/linux.json";
@@ -93,19 +93,19 @@ class _quizpageState extends State<quizpage> {
   // to create the array elements randomly use the dart:math module
   // -----     CODE TO GENERATE ARRAY RANDOMLY
 
-  genrandomarray(){
+  genrandomarray() {
     var distinctIds = [];
     var rand = new Random();
-      for (int i = 0; ;) {
+    for (int i = 0;;) {
       distinctIds.add(rand.nextInt(10));
-        random_array = distinctIds.toSet().toList();
-        if(random_array.length < 10){
-          continue;
-        }else{
-          break;
-        }
+      random_array = distinctIds.toSet().toList();
+      if (random_array.length < 10) {
+        continue;
+      } else {
+        break;
       }
-      print(random_array);
+    }
+    print(random_array);
   }
 
   //   var random_array;
@@ -180,7 +180,6 @@ class _quizpageState extends State<quizpage> {
   }
 
   void checkanswer(String k) {
-    
     // in the previous version this was
     // mydata[2]["1"] == mydata[1]["1"][k]
     // which i forgot to change
@@ -245,9 +244,9 @@ class _quizpageState extends State<quizpage> {
             context: context,
             builder: (context) => AlertDialog(
                   title: Text(
-                    "Quizstar",
+                    "Qua-Qui",
                   ),
-                  content: Text("You Can't Go Back At This Stage."),
+                  content: Text("Caution!! You are exiting the quiz"),
                   actions: <Widget>[
                     FlatButton(
                       onPressed: () {
@@ -278,22 +277,22 @@ class _quizpageState extends State<quizpage> {
               ),
             ),
             Expanded(
-                flex: 6,
-                child: AbsorbPointer(
-                  absorbing: disableAnswer,
-                    child: Container(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        choicebutton('a'),
-                        choicebutton('b'),
-                        choicebutton('c'),
-                        choicebutton('d'),
-                      ],
-                    ),
+              flex: 6,
+              child: AbsorbPointer(
+                absorbing: disableAnswer,
+                child: Container(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      choicebutton('a'),
+                      choicebutton('b'),
+                      choicebutton('c'),
+                      choicebutton('d'),
+                    ],
                   ),
                 ),
               ),
+            ),
             Expanded(
               flex: 1,
               child: Container(

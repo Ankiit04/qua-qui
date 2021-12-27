@@ -17,11 +17,11 @@ class _homepageState extends State<homepage> {
   ];
 
   List<String> des = [
-    "Computational Thinking (CT) is a problem solving process that includes a number of characteristics and dispositions\nJust test yourself !!",
-    "Math includes the study of such topics as numbers . If you think you can excel...\nJust Test Yourself !!",
-    "Statistics s the discipline that concerns the collection, organization, analysis, interpretation, and presentation of data.\n Graph yourself",
-    "English English has become the leading language of international. \n Let see if you can Enged it.",
-    "Here you can find question related all subject.\n You can attempt after completing others ",
+    "Python is one of the most popular and fastest programming language since half a decade.\nIf You think you have learnt it.. \nJust test yourself !!",
+    "Java has always been one of the best choices for Enterprise World. If you think you have learn the Language...\nJust Test Yourself !!",
+    "Javascript is one of the most Popular programming language supporting the Web.\nIt has a wide range of Libraries making it Very Powerful !",
+    "C++, being a statically typed programming language is very powerful and Fast.\nit's DMA feature makes it more useful. !",
+    "Linux is a OPEN SOURCE Operating System which powers many Servers and Workstation.\nIt is also a top Priority in Developement Work !",
   ];
 
   Widget customcard(String langname, String image, String des) {
@@ -40,7 +40,7 @@ class _homepageState extends State<homepage> {
           ));
         },
         child: Material(
-          color: Colors.white60,
+          color: Colors.indigoAccent,
           elevation: 10.0,
           borderRadius: BorderRadius.circular(25.0),
           child: Container(
@@ -73,7 +73,7 @@ class _homepageState extends State<homepage> {
                     langname,
                     style: TextStyle(
                       fontSize: 20.0,
-                      color: Colors.black,
+                      color: Colors.indigoAccent,
                       fontFamily: "Quando",
                       fontWeight: FontWeight.w700,
                     ),
@@ -85,7 +85,7 @@ class _homepageState extends State<homepage> {
                     des,
                     style: TextStyle(
                         fontSize: 18.0,
-                        color: Colors.white,
+                        color: Colors.indigoAccent,
                         fontFamily: "Alike"),
                     maxLines: 5,
                     textAlign: TextAlign.justify,
